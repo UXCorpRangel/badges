@@ -1,0 +1,24 @@
+{
+  "name": "functions",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell"
+  },
+  "dependencies": {
+    "firebase-admin": "13.0.2",
+    "firebase-functions": "6.2.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "3.4.0"
+  },
+  "engines": {
+    "node": "22"
+  }
+}
