@@ -20,7 +20,7 @@ const pluginReact = eslintReact.configs.all.plugins
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  { ignores: resolveIgnoresFromGitignore() },
+  { ignores: [...resolveIgnoresFromGitignore(), 'functions/lib/*'] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...neostandard({
