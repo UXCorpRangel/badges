@@ -133,12 +133,12 @@ importers:
         specifier: 13.0.2
         version: 13.0.2
       firebase-functions:
-        specifier: 6.2.0
-        version: 6.2.0(firebase-admin@13.0.2)
+        specifier: 6.3.1
+        version: 6.3.1(firebase-admin@13.0.2)
     devDependencies:
       firebase-functions-test:
         specifier: 3.4.0
-        version: 3.4.0(firebase-admin@13.0.2)(firebase-functions@6.2.0(firebase-admin@13.0.2))(jest@29.7.0(@types/node@22.13.1))
+        version: 3.4.0(firebase-admin@13.0.2)(firebase-functions@6.3.1(firebase-admin@13.0.2))(jest@29.7.0(@types/node@22.13.1))
 
 packages:
 
@@ -1473,8 +1473,8 @@ packages:
   '@types/node@22.13.1':
     resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
 
-  '@types/qs@6.9.17':
-    resolution: {integrity: sha512-rX4/bPcfmvxHDv0XjfJELTTr+iB+tn032nPILqHm5wbthUUUuVtNGGqzhya9XUxjTP8Fpr0qYgSZZKxGY++svQ==}
+  '@types/qs@6.9.18':
+    resolution: {integrity: sha512-kK7dgTYDyGqS+e2Q4aK9X3D7q234CIZ1Bv0q/7Z5IwRDoADNU81xXJK/YVyLbLTZCoIwUoDoffFeF+p/eIklAA==}
 
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
@@ -2824,8 +2824,8 @@ packages:
       firebase-functions: '>=4.9.0'
       jest: '>=28.0.0'
 
-  firebase-functions@6.2.0:
-    resolution: {integrity: sha512-vfyyVHS8elxplzEQ9To+NaINRPFUsDasQrasTa2eFJBYSPzdhkw6rwLmvwyYw622+ze+g4sDIb14VZym+afqXQ==}
+  firebase-functions@6.3.1:
+    resolution: {integrity: sha512-LTbmsEkSgaOhzTzGUoF7dv906JJJW89o0/spXgnU8gASyR8JLMrCqwV7FnWLso5hyF0fUqNPaEEw/TzLdZMVXw==}
     engines: {node: '>=14.10.0'}
     hasBin: true
     peerDependencies:
@@ -4207,6 +4207,10 @@ packages:
 
   object-inspect@1.13.3:
     resolution: {integrity: sha512-kDCGIbxkDSXE3euJZZXzc6to7fCrKHNI/hSRQnRuQ+BWjFNzZwiFF8fj/6o2t2G9/jTj8PSIYTfCLelLZEeRpA==}
+    engines: {node: '>= 0.4'}
+
+  object-inspect@1.13.4:
+    resolution: {integrity: sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==}
     engines: {node: '>= 0.4'}
 
   object-keys@1.1.1:
@@ -7095,24 +7099,24 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/caseless@0.12.5':
     optional: true
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/cookie@0.6.0': {}
 
   '@types/cors@2.8.17':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/css-tree@2.3.10': {}
 
@@ -7130,8 +7134,8 @@ snapshots:
 
   '@types/express-serve-static-core@4.19.6':
     dependencies:
-      '@types/node': 22.10.5
-      '@types/qs': 6.9.17
+      '@types/node': 22.13.1
+      '@types/qs': 6.9.18
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
 
@@ -7139,7 +7143,7 @@ snapshots:
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 4.19.6
-      '@types/qs': 6.9.17
+      '@types/qs': 6.9.18
       '@types/serve-static': 1.15.7
 
   '@types/graceful-fs@4.1.9':
@@ -7168,7 +7172,7 @@ snapshots:
 
   '@types/jsonwebtoken@9.0.7':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/lodash@4.17.14': {}
 
@@ -7197,7 +7201,7 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/qs@6.9.17': {}
+  '@types/qs@6.9.18': {}
 
   '@types/range-parser@1.2.7': {}
 
@@ -7212,31 +7216,31 @@ snapshots:
   '@types/request@2.48.12':
     dependencies:
       '@types/caseless': 0.12.5
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
       '@types/tough-cookie': 4.0.5
       form-data: 2.5.2
     optional: true
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 22.13.1
 
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
       '@types/send': 0.17.4
 
   '@types/stack-utils@2.0.3': {}
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
       minipass: 4.2.8
 
   '@types/tough-cookie@4.0.5':
@@ -7252,7 +7256,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.19.1(@typescript-eslint/parser@8.19.1(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3))(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)':
@@ -9192,16 +9196,16 @@ snapshots:
       - encoding
       - supports-color
 
-  firebase-functions-test@3.4.0(firebase-admin@13.0.2)(firebase-functions@6.2.0(firebase-admin@13.0.2))(jest@29.7.0(@types/node@22.13.1)):
+  firebase-functions-test@3.4.0(firebase-admin@13.0.2)(firebase-functions@6.3.1(firebase-admin@13.0.2))(jest@29.7.0(@types/node@22.13.1)):
     dependencies:
       '@types/lodash': 4.17.14
       firebase-admin: 13.0.2
-      firebase-functions: 6.2.0(firebase-admin@13.0.2)
+      firebase-functions: 6.3.1(firebase-admin@13.0.2)
       jest: 29.7.0(@types/node@22.13.1)
       lodash: 4.17.21
       ts-deepmerge: 2.0.7
 
-  firebase-functions@6.2.0(firebase-admin@13.0.2):
+  firebase-functions@6.3.1(firebase-admin@13.0.2):
     dependencies:
       '@types/cors': 2.8.17
       '@types/express': 4.17.21
@@ -11009,6 +11013,8 @@ snapshots:
 
   object-inspect@1.13.3: {}
 
+  object-inspect@1.13.4: {}
+
   object-keys@1.1.1: {}
 
   object.assign@4.1.7:
@@ -11287,7 +11293,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.10.5
+      '@types/node': 22.13.1
       long: 5.2.4
 
   proxy-addr@2.0.7:
@@ -11692,27 +11698,27 @@ snapshots:
   side-channel-list@1.0.0:
     dependencies:
       es-errors: 1.3.0
-      object-inspect: 1.13.3
+      object-inspect: 1.13.4
 
   side-channel-map@1.0.1:
     dependencies:
       call-bound: 1.0.3
       es-errors: 1.3.0
       get-intrinsic: 1.2.7
-      object-inspect: 1.13.3
+      object-inspect: 1.13.4
 
   side-channel-weakmap@1.0.2:
     dependencies:
       call-bound: 1.0.3
       es-errors: 1.3.0
       get-intrinsic: 1.2.7
-      object-inspect: 1.13.3
+      object-inspect: 1.13.4
       side-channel-map: 1.0.1
 
   side-channel@1.1.0:
     dependencies:
       es-errors: 1.3.0
-      object-inspect: 1.13.3
+      object-inspect: 1.13.4
       side-channel-list: 1.0.0
       side-channel-map: 1.0.1
       side-channel-weakmap: 1.0.2
